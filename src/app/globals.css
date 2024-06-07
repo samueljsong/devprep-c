@@ -2,32 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+:root {
+    --borderColor: #a1a1a1;
+    --featureColor: 217, 217, 217, 0.1;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.dark {
+    --background: 0, 0, 0;
+    --textColor: 255, 255, 255;
+
+    background: rgba(var(--background));
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.light {
+    --background: 255 255 255;
+    --textColor: 0, 0, 0;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
+@font-face {
+    font-family: poppins;
+    src: url(../../public/fonts/Poppins-Regular.ttf);
+}
+
+* {
+    margin: 0;
+}
+
+.bento-card-a {
+    height: 27rem;
+}
+
+.bento-card-b-w {
+    height: 18rem;
+}
+
+.bento-card-b-s {
+    height: 18rem;
+}
