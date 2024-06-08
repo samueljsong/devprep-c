@@ -10,6 +10,7 @@ import listOfFeatures from "@/data/features";
 // Components
 import BentoBox from "@/components/BentoBox";
 import BentoBoxB from "@/components/BentoBoxB";
+import LandingFooter from "@/components/LandingFooter";
 
 export default function Home() {
     return (
@@ -40,12 +41,12 @@ export default function Home() {
                 <h2 className="text-textColor z-20 text-5xl">
                     How do we work?
                 </h2>
-                <p className="text-textColor z-20">
+                <p className="text-textColor z-20 pb-6">
                     Discover our features that make it simple to keep track of
                     your progress
                 </p>
-                {/* Bento Grid */}
-                <div className=" grid h-4/5 w-4/5 grid-cols-3 grid-rows-5 gap-4">
+
+                <div className=" grid h-4/5 w-4/5 grid-cols-3 grid-rows-5 gap-4 max-w-1080">
                     {listOfFeatures.map((f) => {
                         if (f.bentoType === "b-w") {
                             return <BentoBoxB feature={f} key={f.title} />;
@@ -53,6 +54,32 @@ export default function Home() {
                         return <BentoBox feature={f} key={f.title} />;
                     })}
                 </div>
+            </div>
+
+            <div className="h-screen z-10 flex justify-center items-center">
+                <div className=" w-4/5 max-w-1080 h-auto flex justify-around">
+                    <div className=" w-72">
+                        <h2 className="text-textColor text-6xl">Contact</h2>
+                        <h2 className="text-textColor text-6xl text-right">
+                            Us
+                        </h2>
+                        <p className="text-textColor">
+                            Leave a message about any features you would like to
+                            see in the future!
+                        </p>
+                    </div>
+                    <div>
+                        <p className="text-textColor">Name</p>
+                        <input type="text" />
+                        <p className="text-textColor">Email</p>
+                        <input type="text" />
+                        <p className="text-textColor">Share your thoughts</p>
+                        <input type="text" />
+                        <button className="text-textColor"></button>
+                    </div>
+                </div>
+
+                <LandingFooter></LandingFooter>
             </div>
         </main>
     );

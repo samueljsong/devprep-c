@@ -16,8 +16,13 @@ const config: Config = {
             colors: {
                 background: "rgba(var(--background))",
                 textColor: "rgba(var(--textColor))",
-                borderColor: "var(--borderColor)",
+                borderColor: "rgba(var(--borderColor))",
                 featureColor: "rgba(var(--featureColor))",
+            },
+            maxWidth: {
+                "1280": "80rem",
+                "960": "60rem",
+                "1080": "67.50rem",
             },
         },
     },

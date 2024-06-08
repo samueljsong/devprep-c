@@ -2,36 +2,36 @@ const listOfFeatures = [
     {
         title: "Daily Streaks",
         description:
-            "Daily streaks allows you to stay on top of the skills you want to practice on a daily basis",
-        imagePath: "",
+            "Stay on top of the skills you want to practice on a daily basis",
+        imagePath: "/svg/daily_streaks.svg",
         bentoType: "a",
     },
     {
         title: "Technical Interview",
         description:
-            "Technical interview section follows the NeetCode 150 guideline on. Add new questions to master key data structures and algorithms",
-        imagePath: "",
+            "Follow the NeetCode 150 guideline on. Add new questions to master key data structures and algorithms",
+        imagePath: "/svg/technical_interview.svg",
         bentoType: "a",
     },
     {
         title: "Flash Cards",
         description:
-            "Flash cards can help with memorizing both technical knowledge and soft skill interview questions.",
-        imagePath: "",
+            "Memorize both technical knowledge and soft skill interview questions.",
+        imagePath: "/svg/flashcard.svg",
         bentoType: "a",
     },
     {
         title: "Job Tracking Dashboard",
         description:
-            "Having an organized and dedicated dashboard can make managing job searches easier. Customize and update the progress for each job status.",
-        imagePath: "",
+            "Organized and dedicated dashboard. Customize and update the progress for each job status.",
+        imagePath: "/svg/jobtracking.svg",
         bentoType: "b-w", // type: b wide
     },
     {
         title: "Brushing Up",
         description:
             "Brush up previous learned material within flashcards, and completed technical interview questions with a daily quiz",
-        imagePath: "",
+        imagePath: "/svg/brushup.svg",
         bentoType: "b-s", // type: b short
     },
 ];

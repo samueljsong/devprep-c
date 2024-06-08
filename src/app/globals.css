@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    --borderColor: #a1a1a1;
+    --borderColor: 161, 161, 161;
     --featureColor: 217, 217, 217, 0.1;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .bento-card-a {
-    height: 27rem;
+    height: auto;
 }
 
 .bento-card-b-w {
@@ -37,5 +37,5 @@
 }
 
 .bento-card-b-s {
-    height: 18rem;
+    height: auto;
 }
