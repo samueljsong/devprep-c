@@ -57,25 +57,39 @@ export default function Home() {
             </div>
 
             <div className="h-screen z-10 flex justify-center items-center">
-                <div className=" w-4/5 max-w-1080 h-auto flex justify-around">
-                    <div className=" w-72">
+                <div className=" w-4/5 max-w-5xl h-auto flex justify-around">
+                    <div className=" w-80 flex flex-col">
                         <h2 className="text-textColor text-6xl">Contact</h2>
                         <h2 className="text-textColor text-6xl text-right">
                             Us
                         </h2>
-                        <p className="text-textColor">
+                        <p className="text-textColor pt-4">
                             Leave a message about any features you would like to
                             see in the future!
                         </p>
                     </div>
-                    <div>
-                        <p className="text-textColor">Name</p>
-                        <input type="text" />
-                        <p className="text-textColor">Email</p>
-                        <input type="text" />
+                    <div className="flex flex-col gap-4">
+                        <div className=" h-12 border rounded-xl w-96 flex items-center justify-center">
+                            <input
+                                className=" bg-transparent  w-95 text-textColor focus: outline-none "
+                                placeholder="Your Name"
+                                type="text"
+                            />
+                        </div>
+                        <div className=" h-12 border rounded-xl w-96 flex items-center justify-center">
+                            <input
+                                className=" bg-transparent  w-95 text-textColor focus: outline-none"
+                                placeholder="Your Email"
+                                type="text"
+                            />
+                        </div>
                         <p className="text-textColor">Share your thoughts</p>
-                        <input type="text" />
-                        <button className="text-textColor"></button>
+                        <textarea
+                            className="border w-96 h-28 bg-transparent rounded-3xl"
+                            name=""
+                            id=""
+                        ></textarea>
+                        <button className="text-textColor">Send</button>
                     </div>
                 </div>
 

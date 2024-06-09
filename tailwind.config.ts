@@ -24,6 +24,10 @@ const config: Config = {
                 "960": "60rem",
                 "1080": "67.50rem",
             },
+            width: {
+                "95": "95%",
+                "1p": "1px",
+            },
         },
     },
     plugins: [],
