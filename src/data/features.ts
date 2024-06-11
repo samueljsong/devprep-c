@@ -1,3 +1,5 @@
+// This section is for the landing page features
+
 const listOfFeatures = [
     {
         title: "Daily Streaks",
